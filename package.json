@@ -1,18 +1,19 @@
 {
-  "name": "pretty-comit",
-  "version": "1.0.1",
+  "name": "tidy-cz",
+  "version": "1.0.2",
   "description": "Adds scripts and prettier files to your project",
   "main": "index.js",
   "peerDependencies": {
     "prettier": "^2.8.8",
     "commitizen": "^4.3.0"
   },
-    "scripts": {
-    "postinstall": "node index.js"
+  "scripts": {
+    "preinstall": "node index.js",
+    "postinstall": "cd ../../ && npx commitizen init cz-conventional-changelog --save-dev --save-exact"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DSmith575/pretty-commit.git"
+    "url": "git+https://github.com/DSmith575/tidy-cz"
   },
   "keywords": [
     "prettier",
@@ -21,7 +22,7 @@
   "author": "Deacon Smith",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DSmith575/pretty-commit/issues"
+    "url": "https://github.com/DSmith575/tidy-cz/issues"
   },
-  "homepage": "https://github.com/DSmith575/pretty-commit#readme"
+  "homepage": "https://github.com/DSmith575/tidy-cz#readme"
 }

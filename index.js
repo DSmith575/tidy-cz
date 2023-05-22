@@ -1,6 +1,5 @@
 const fs = require("fs");
 const { resolve } = require("path");
-const cp = require("child_process");
 
 try {
   const prettierrcContent = `{
@@ -34,10 +33,6 @@ try {
     packageJsonPath,
     JSON.stringify(packageJson, null, 2),
     "utf8"
-  );
-
-  cp.execSync(
-    "npx commitizen init cz-conventional-changelog --save-dev --save-exact"
   );
 
   console.log("Scripts added to package.json");
