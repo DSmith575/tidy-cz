@@ -1,6 +1,6 @@
 {
   "name": "tidy-cz",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "Adds scripts and prettier files to your project",
   "main": "index.js",
   "peerDependencies": {
